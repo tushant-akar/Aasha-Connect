@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Aasha Connect</string>
+    <string name="home">Home</string>
+    <string name="info">Information Centre</string>
+    <string name="profile">Profile</string>
+    <string name="SmallChildPage">0-2 Yrs</string>
+    <string name="BigChildPage">2-5 Yrs</string>
+    <string name="PregnantWomanPage">Pregnant Woman</string>
+    <string name="Name">Name : </string>
+    <string name="UID">UID : </string>
+    <string name="Mother_Name">Mother : </string>
+    <string name="Father_Name">Father : </string>
+    <string name="DOB">DOB : </string>
+    <string name="Blood_Group">Blood Group : </string>
+    <string name="login_page">LoginPage</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >8 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="add_new">New Entry</string>
+    <string name="Height">Height : </string>
+    <string name="Weight">Weight : </string>
+    <string name="BMI">BMI : </string>
+    <string name="Husband_Name">"Husband: "</string>
+    <string name="Hemoglobin">"Hemoglobin: "</string>
+    <string name="Urine">"Urine: "</string>
+    <string name="Abdomen">"Abdomen: "</string>
+    <string name="BP">"BP: "</string>
+    <string name="longText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis nisl nec ante convallis, eget bibendum nibh scelerisque. Morbi venenatis, nisi vitae eleifend bibendum, enim ex faucibus odio, in lacinia ipsum nisi euismod ipsum. Proin rhoncus efficitur ligula vel porttitor. Sed sagittis elementum massa, non finibus felis gravida non. Aliquam erat volutpat.</string>
+    <string name="expandable_text">We Sanchhaya Education Pvt. Ltd., are registered and headquartered
+        at BC 227, 2nd Floor, Matrix Business Tower, B4, Sector 132, Noida, UP-201301, hereinafter
+        referred to as GeeksforGeeks. We also offer paid Courses managed by Sanchhaya Classes Pvt. Ltd.
+        with registered office address B-142, Vishwash Park, Uttam Nagar, New Delhi, North Delhi, Delhi, India, 110059.
+        At GeeksforGeeks, we value your trust and  respect your privacy. This privacy statement (“Privacy Statement”)
+        applies to the treatment of personally identifiable information submitted by, or otherwise obtained from,
+        you in connection with the associated application (“Application”). The Application is
+        provided by GeeksforGeeks (and may be provided by Geeksforgeeks on behalf
+        of a GeeksforGeeks licensor or partner (“Application Partner”).
+        By using or otherwise accessing the Application, you acknowledge that you accept the practices
+        and policies outlined in this Privacy Statement.</string>
+    <string name="Email_hint">"Email : "</string>
+    <string name="Phone_Name">"Contact No : "</string>
+    <string name="DOJ">"Date of Joining : "</string>
+    <string name="Area">"Area : "</string>
+    <string name="Count">"No of Registry : "</string>
+    <string name="AshaID">"Asha ID : "</string>
+    <string name="PregnancyDate">Expected Pregnancy Date</string>
+    <string name="reset"><u>Reset Password</u></string>
+</resources>

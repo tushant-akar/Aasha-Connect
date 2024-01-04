@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "341206726580",
+    "project_id": "aasha-connect",
+    "storage_bucket": "aasha-connect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341206726580:android:071b006eb6c1bf2e9164e1",
+        "android_client_info": {
+          "package_name": "com.hackhurricane.aashaconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjmPxgkS4jwI_MdRpYGIue8OOS5IMP30Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

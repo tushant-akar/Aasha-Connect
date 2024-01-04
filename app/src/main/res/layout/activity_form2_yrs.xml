@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade5"
+    android:backgroundTintMode="screen"
+    tools:context=".Form_2Yrs">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:itemBackground="@color/shade1"
+            app:itemIconTint="@drawable/selector_color"
+            app:itemTextColor="@drawable/selector_color"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:menu="@menu/menu_navigation" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-90dp"            >
+
+            <LinearLayout
+                android:id="@+id/Name_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/Child_Name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/asul_bold"
+                    android:text="Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/shade1"
+                    android:textSize="48sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/UID_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/UID_name_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/UID"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/UID_Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" XYZ ABCD"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Mother_name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Mother_name_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Mother_Name"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Mother_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" XYZ ABCD"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/MotherName_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:selectAllOnFocus="true"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Father_name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Father_name_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Father_Name"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Father_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" ABCD XYZ"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/FatherName_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:selectAllOnFocus="true"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DOB_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/DOB_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/DOB"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DateOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:text=" 31/05/2003"
+                    android:textColor="#000000"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/selectDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="Pick Date"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Blood_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Blood_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Blood_Group"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Blood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" O+"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/Blood_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Height_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Height_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Height"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 1.23"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/Height_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Weight_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Weight_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Weight"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 35"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/Weight_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BMI_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/BMI_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/BMI"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 0"
+                    android:textColor="#000000" />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/BMI_edit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="42dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/black"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:visibility="gone" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view1"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine1Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 1"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:layout_margin="5sp"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine1_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:visibility="gone"
+                                    android:layout_margin="5sp"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine2Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 2"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine2_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:layout_margin="5sp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine3Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 3"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine3_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:layout_margin="5sp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine4Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 4"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine4_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:layout_margin="5sp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view5"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine5Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 5"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine5_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:visibility="gone"
+                                    android:layout_margin="5sp"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view6"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine6Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 6"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine6_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:visibility="gone"
+                                    android:layout_margin="5sp"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view7"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine7Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 7"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine7_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:visibility="gone"
+                                    android:layout_margin="5sp"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view8"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine8Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 8"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine8_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:visibility="gone"
+                                    android:layout_margin="5sp"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view9"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine9Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 9"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine9_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:visibility="gone"
+                                    android:layout_margin="5sp"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view10"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/shade2"
+                            app:cardCornerRadius="8dp">
+                            <LinearLayout
+                                android:id="@+id/Vaccine10Detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/info_text10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Vaccine 10"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5sp"/>
+
+                                <TextView
+                                    android:id="@+id/Vaccine10_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:textColor="@color/shade4"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5sp"/>
+
+                                <Button
+                                    android:id="@+id/selectDateVaccine10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pick Date"
+                                    android:backgroundTint="@color/shade3"
+                                    android:textColor="@color/shade1"
+                                    android:visibility="gone"
+                                    android:layout_margin="5sp"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textColor="#FFE0B2"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98" />
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#FFE0B2"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

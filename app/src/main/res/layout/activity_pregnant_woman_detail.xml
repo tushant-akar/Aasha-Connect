@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade5"
+    tools:context=".PregnantWomanDetail">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:itemBackground="@color/shade1"
+            app:itemIconTint="@drawable/selector_color"
+            app:itemTextColor="@drawable/selector_color"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+            app:menu="@menu/menu_navigation" />
+
+        <ScrollView
+            android:layout_width="411dp"
+            android:layout_height="667dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.019">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <LinearLayout
+                    android:id="@+id/Name_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:id="@+id/Child_Name"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/asul_bold"
+                        android:text="Name"
+                        android:textAlignment="center"
+                        android:textColor="@color/shade1"
+                        android:textSize="48sp" />
+
+                    <EditText
+                        android:id="@+id/Child_Name_Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/UID_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/UID_name_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/UID"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/UID_Value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" XYZ ABCD"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Husband_name_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Husband_name_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/Husband_Name"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Husband_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" XYZ ABCD"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/HusbandName_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DOB_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/DOB_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/PregnancyDate"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/DateOB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="18/07/2003"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/selectDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:text="Pick Date"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Blood_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Blood_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/Blood_Group"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Blood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="O+"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/Blood_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Height_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Height_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/Height"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" 0"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/Height_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:hint="Enter in metres"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Weight_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Weight_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/Weight"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" 0"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/Weight_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:hint="Enter in kgs"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Hemoglobin_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Hemoglobin_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/Hemoglobin"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Hemoglobin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/Hemoglobin_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/BP_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/BP_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/BP"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/BP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/BP_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/Urine_layout"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="2dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/Urine_hint"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="42dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="@string/Urine"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/Urine"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="42dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="#000000" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/Urine_edit"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="42dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:backgroundTint="@color/black"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:visibility="gone" />-->
+
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/Abdomen_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Abdomen_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/Abdomen"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Abdomen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/Abdomen_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_view1"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/shade2"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/Vaccine1Detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/info_text1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="ANC Check-Up 1"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/shade4"
+                                        android:textSize="19sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine11_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Hemoglobin: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine11_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                <LinearLayout
+                                    android:id="@+id/Vaccine12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/Vaccine12_date_test"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="BP: "
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/shade4"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/Vaccine12_date"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text=""
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/shade4"
+                                        android:textSize="20sp" />
+
+                                </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine13"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine13_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Urine: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine13_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine13"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine14"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine14_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Weight: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine14_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine14"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine15"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine15_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Abdomen: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine15_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine15"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine16"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine16_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="TT: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine16_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_view2"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/shade2"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/Vaccine2Detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/info_text2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="ANC Check-Up 2"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/shade4"
+                                        android:textSize="19sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine21"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine21_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Hemoglobin: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine21_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine22"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine22_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="BP: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine22_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine23"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine23_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Urine: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine23_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine23"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine24"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine24_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Weight: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine24_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine24"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine25"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine25_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Abdomen: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine25_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine25"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine26"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine26_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="TT: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine26_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine26"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_view3"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/shade2"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/Vaccine3Detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/info_text3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="ANC Check-Up 3"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/shade4"
+                                        android:textSize="19sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine31"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine31_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Hemoglobin: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine31_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine31"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine32"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine32_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="BP: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine32_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine32"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine33"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine33_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Urine: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine33_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine33"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine34"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine34_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Weight: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine34_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine34"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine35"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine35_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Abdomen: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine35_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine35"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine36"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine36_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="TT: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine36_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine36"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_view4"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/shade2"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/Vaccine4Detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:id="@+id/info_text4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="ANC Check-Up 4"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/shade4"
+                                        android:textSize="19sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine41"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine41_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Hemoglobin: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine41_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine41"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine42"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine42_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="BP: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine42_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine42"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine43"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine43_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Urine: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine43_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine43"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine44"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine44_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Weight: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine44_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine44"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine45"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine45_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Abdomen: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine45_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine45"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/Vaccine46"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Vaccine46_date_test"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="TT: "
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/Vaccine46_date"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=""
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/shade4"
+                                            android:textSize="20sp" />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/selectDateVaccine46"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="@color/shade3"
+                                        android:text="Pick Date"
+                                        android:textColor="@color/shade1"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/white"
+            android:text="Delete"
+            android:textColor="#FFE0B2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.90" />
+
+        <Button
+            android:id="@+id/Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/white"
+            android:text="Edit"
+            android:textColor="#FFE0B2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.90" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
